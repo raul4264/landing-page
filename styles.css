@@ -22,6 +22,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   margin-bottom: 60px;
   width: 100%;
+  opacity: 0.7;
 }
 
 .navbar ul {
@@ -104,38 +105,70 @@ button:hover {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  min-height: 770px;
-  background-color: #ffbc0e;
+  min-height: 700px;
+
+  background-image: radial-gradient(
+    circle at 46.51% 51.27%,
+    #9c9a1f 0,
+    #9d8d19 10%,
+    #997e15 20%,
+    #926e12 30%,
+    #875c10 40%,
+    #784a0e 50%,
+    #68390c 60%,
+    #592a0a 70%,
+    #4c1e06 80%,
+    #401502 90%,
+    #370c00 100%
+  );
+  /*  rgb(238, 184, 104); */
   margin-bottom: 40px;
   border: #e2f1f8 solid 40px;
+  border-radius: 90px;
 }
 
 .seccionUno .slogan {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+
   flex-direction: column;
   width: 50%;
-  padding: 30px 40px;
+  padding-left: 5px;
+  border-radius: 40px;
+}
+
+.seccionUno .imagen {
+  min-height: 350px;
+  background-color: transparent;
 }
 
 .seccionUno .imagen img {
-  min-height: 500px;
-  width: 400px;
   border-radius: 10px;
+  height: 360px;
+  padding-right: 10px;
 }
 
 .seccionUno .slogan h1 {
   font-size: 4rem;
-  color: azure;
+  color: transparent;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #ffffff 0,
+    #fffff6 25%,
+    #f4efd5 50%,
+    #b2b2b4 75%,
+    #7d7d95 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 h2 {
   font-size: 2rem;
 }
 p {
-  padding: 35px 0;
+  padding: 35px 20px;
 }
 .botones {
   padding-bottom: 80px;
@@ -165,16 +198,31 @@ p {
   margin-bottom: 50px;
 }
 #info h2 {
-  padding: 0 20px;
+  padding: 20px;
   color: azure;
+  border: solid 2px whitesmoke;
 }
 .info-cards-container {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 .info-card {
   margin-top: 50px;
-  background-color: rgb(49, 29, 4);
+  /*   background-color: rgb(49, 29, 4); */
+  background-image: radial-gradient(
+    circle at 46.51% 51.27%,
+    #9c9a1f 0,
+    #9d8d19 10%,
+    #997e15 20%,
+    #926e12 30%,
+    #875c10 40%,
+    #784a0e 50%,
+    #68390c 60%,
+    #592a0a 70%,
+    #4c1e06 80%,
+    #401502 90%,
+    #370c00 100%
+  );
   width: 300px;
   height: 290px;
   border-radius: 20px;
@@ -191,11 +239,11 @@ p {
 .info-card p {
   text-align: center;
   font-size: 14px;
-  color: azure;
+  color: rgb(23, 24, 24);
 }
 .info-card h3 {
   margin-top: 20px;
-  color: azure;
+  color: rgb(8, 8, 8);
 }
 
 footer {
@@ -204,6 +252,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 20px;
   border: #e2f1f8 solid 40px;
+  border-radius: 90px;
 }
 footer .footer {
   display: flex;
@@ -213,7 +262,20 @@ footer .footer {
 
 .footer .footer-caja-iz {
   padding: 40px;
-  background-color: #ffbc0e;
+  background-image: radial-gradient(
+    circle at 46.51% 51.27%,
+    #9c9a1f 0,
+    #9d8d19 10%,
+    #997e15 20%,
+    #926e12 30%,
+    #875c10 40%,
+    #784a0e 50%,
+    #68390c 60%,
+    #592a0a 70%,
+    #4c1e06 80%,
+    #401502 90%,
+    #370c00 100%
+  );
   width: 400px;
   border-radius: 15px;
   display: flex;
@@ -225,8 +287,6 @@ footer .footer {
   padding-left: 50px;
 }
 .footer .footer-caja-der {
-  background-color: #ffbc0e;
-  width: 400px;
   border-radius: 15px;
 }
 
@@ -236,12 +296,9 @@ footer .footer {
   justify-content: center;
   background-color: black;
   height: 120px;
-  border-radius: 0%;
+  border-radius: 0 0 50px 50px;
 }
-.imagen .imagen-interna img {
-  height: 60px;
-  width: auto;
-}
+
 /*===================media query=============*/
 
 @media (max-width: 1200px) {
