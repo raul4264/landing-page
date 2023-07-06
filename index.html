@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing-page</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo" width="70px" />
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Abouts</a></li>
-          <li><a href="#">Contacts</a></li>
+    <header class="header">
+      <img src="./img/logo.jpg" alt="logo" />
+
+      <nav class="navbar">
+        <label for="toggle-menu"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link">Services</a></li>
+          <li><a href="#" class="navbar-link">Abouts</a></li>
+          <li><a href="#" class="navbar-link">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -37,7 +42,7 @@
         </div>
 
         <div class="imagen">
-          <img src="./img/about-img.png" alt="" />
+          <img src="./img/about-img.png" alt="cafe" width="350px" />
         </div>
       </section>
       <section class="seccionDos">
@@ -50,6 +55,57 @@
           internacionales.
         </p>
       </section>
+      <section id="info">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum!
+        </h2>
+        <div class="info-cards-container">
+          <div class="info-card">
+            <img src="./img/logo.jpg" alt="logo" />
+            <h3>Lorem 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. quia unde sunt officia,
+              placeat modi aliquam!
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./img/logo.jpg" alt="logo" />
+            <h3>Lorem 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. quia unde sunt officia,
+              placeat modi aliquam!
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./img/logo.jpg" alt="logo" />
+            <h3>Lorem 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. quia unde sunt officia,
+              placeat modi aliquam!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-caja-iz">
+          <div class="datos">
+            <h3>kjgjkg</h3>
+          </div>
+          <div class="datos">
+            <h3>kjhkjhkj</h3>
+          </div>
+        </div>
+        <div class="footer-caja-der">
+          <img src="./img/img-2.png" alt="" />
+        </div>
+      </div>
+      <div class="imagen">
+        <div class="imagen-interna">
+          <img src="./img/logo.jpg" alt="logo" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
