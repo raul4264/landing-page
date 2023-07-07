@@ -102,11 +102,11 @@ button:hover {
 .seccionUno {
   margin: 0 auto;
   max-width: 1200px;
+
   align-items: center;
   display: flex;
   justify-content: space-around;
-  min-height: 700px;
-
+  flex-wrap: wrap;
   background-image: radial-gradient(
     circle at 46.51% 51.27%,
     #9c9a1f 0,
@@ -139,14 +139,11 @@ button:hover {
 }
 
 .seccionUno .imagen {
-  min-height: 350px;
   background-color: transparent;
 }
 
 .seccionUno .imagen img {
   border-radius: 10px;
-  height: 360px;
-  padding-right: 10px;
 }
 
 .seccionUno .slogan h1 {
@@ -295,23 +292,26 @@ footer .footer {
   align-items: center;
   justify-content: center;
   background-color: black;
-  height: 120px;
+  flex-wrap: nowrap;
   border-radius: 0 0 50px 50px;
+  padding: 10px;
 }
 
-/*===================media query=============*/
+/*=======================================*/
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 980px) {
   .seccionUno {
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    width: 60%;
-    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    min-height: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .seccionUno .slogan {
     width: 100%;
-    min-height: 700px;
   }
 
   h2 {
@@ -324,6 +324,8 @@ footer .footer {
     flex-direction: row;
   }
   .seccionUno .imagen {
+    margin-bottom: 50px;
+    border-radius: 20px;
   }
 
   .seccionDos {
@@ -331,106 +333,132 @@ footer .footer {
     width: 60%;
     background-color: #000;
     flex-wrap: wrap;
+    border-radius: 40px;
   }
   .seccionDos p {
     flex-direction: column;
     color: azure;
     padding: 40px 70px;
   }
-}
 
-/*=======================================*/
-
-@media only screen and (max-width: 980px) {
-  .seccionUno {
-    background-color: rgb(114, 76, 6);
-    width: 400px;
+  #info {
+    width: 80%;
+    border-radius: 30px;
   }
 
-  .seccionUno .slogan {
-    background-color: #ffbc0e;
-    width: 500px;
+  .info-cards-container {
+    flex-direction: column;
+  }
+  .info-card {
+    max-height: 280px;
   }
 
-  .seccionUno .slogan h1 {
-    font-size: 1.5rem;
-    color: rgb(143, 71, 21);
+  footer {
+    width: 90%;
+    border-radius: 40px;
+    gap: 10px;
   }
 
-  h2 {
-    font-size: 1rem;
-    color: antiquewhite;
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    min-height: 600px;
   }
 
+  .footer .footer-caja-iz {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .footer-caja-der img {
+    max-width: 250px;
+  }
+  .footer .footer-caja-der {
+    max-width: 200px;
+  }
   .imagen {
-    background-color: #ffbc0e;
-    width: 500px;
-    padding-left: 38px;
-    padding-bottom: 40px;
+    border-radius: 0 0 5px 5px;
   }
-  .seccionUno .imagen {
-    margin-top: -100px;
+  .imagen .imagen-interna {
+    height: 100px;
+    padding: 10px;
   }
 
-  .navbar ul {
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 80px);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-  }
-
-  .navbar i {
-    display: block;
-  }
-
-  #toggle-menu:checked ~ .navbar-list {
-    display: flex;
+  .imagen .imagen-interna {
+    height: 100px;
   }
 }
 
-@media (max-width: 680px) {
-  body {
-    background-color: rgb(0, 38, 255);
-  }
+/*============================================*/
 
+@media (max-width: 580px) {
   .seccionUno {
-    width: 100%;
-    background-color: #ffbc0e;
-  }
+    margin: 0 auto;
+    min-width: 320px;
 
-  .seccionUno .slogan {
-    width: 70%;
-  }
-
-  h2 {
-    font-size: 1rem;
-    color: antiquewhite;
-  }
-
-  .navbar ul {
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 80px);
-    position: absolute;
-    top: 80px;
-    left: 0;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    background-image: none;
+    align-items: center;
+  }
+  .seccionUno .slogan {
+    max-width: 300px;
+    margin: 0 auto;
+
     align-items: center;
     justify-content: center;
-    display: none;
   }
-
-  .navbar i {
-    display: block;
+  .seccionUno .slogan {
+    max-width: 300px;
+    padding-right: 30px;
   }
-
-  #toggle-menu:checked ~ .navbar-list {
+  .seccionUno .slogan h1 {
+    font-size: 2.5rem;
+  }
+  .seccionUno .slogan h2 {
+    font-size: 0.8rem;
+    color: white;
+  }
+  .seccionUno .slogan p {
+    font-size: 0.8rem;
+    color: white;
+  }
+  .seccionUno img {
+    width: 350px;
+    border-radius: 30px;
+    border: #f5ebeb solid 2px;
+  }
+  .seccionUno .slogan .botones {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .seccionDos {
+    display: flex;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .seccionDos p {
+    flex-direction: column;
+    color: azure;
+    padding: 40px 70px;
+  }
+
+  #info {
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .info-cards-container {
+    flex-direction: column;
+  }
+  .info-card {
+    max-height: 280px;
   }
 }
