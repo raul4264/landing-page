@@ -144,6 +144,7 @@ button:hover {
 
 .seccionUno .imagen img {
   border-radius: 10px;
+  border: #d6d6da solid 2px;
 }
 
 .seccionUno .slogan h1 {
@@ -378,7 +379,7 @@ footer .footer {
     max-width: 250px;
   }
   .footer .footer-caja-der {
-    max-width: 200px;
+    min-width: 200px;
   }
   .imagen {
     border-radius: 0 0 5px 5px;
@@ -386,10 +387,6 @@ footer .footer {
   .imagen .imagen-interna {
     height: 100px;
     padding: 10px;
-  }
-
-  .imagen .imagen-interna {
-    height: 100px;
   }
 }
 
@@ -399,7 +396,7 @@ footer .footer {
   .seccionUno {
     margin: 0 auto;
     min-width: 320px;
-
+    border: #e2f1f8 solid 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -418,7 +415,7 @@ footer .footer {
     padding-right: 30px;
   }
   .seccionUno .slogan h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .seccionUno .slogan h2 {
     font-size: 0.8rem;
@@ -428,10 +425,10 @@ footer .footer {
     font-size: 0.8rem;
     color: white;
   }
-  .seccionUno img {
-    width: 350px;
-    border-radius: 30px;
-    border: #f5ebeb solid 2px;
+  .seccionUno .imagen img {
+    width: 290px;
+    border-radius: 10px;
+    border: #f5ebeb solid 20px;
   }
   .seccionUno .slogan .botones {
     display: flex;
@@ -460,5 +457,16 @@ footer .footer {
   }
   .info-card {
     max-height: 280px;
+  }
+  .footer .footer-caja-der img {
+    min-width: 200px;
+  }
+
+  footer {
+    border: #e2f1f8 solid 5px;
+    background-color: transparent;
+  }
+  .imagen {
+    border-radius: 0 0 40px 40px;
   }
 }
