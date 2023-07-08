@@ -7,12 +7,13 @@
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   border-radius: 5px;
+  list-style: none;
 }
 body {
   /* background-color: rgb(114, 76, 6); */
   background-image: url(./img/thumb2-4k-coffee-beans-texture-close-up-arabica-brown-backgrounds.jpg);
 }
-.header {
+header {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -22,32 +23,36 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   margin-bottom: 60px;
   width: 100%;
-  opacity: 0.7;
-}
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 50px;
+  opacity: 0.9;
 }
 
 .navbar {
   display: flex;
 }
-.navbar i {
-  font-size: 38px;
+
+#menu-toogle,
+.menu-label {
   display: none;
 }
 
-#toggle-menu {
-  display: none;
-}
-
-.navbar-link {
-  text-decoration: none;
+.navbar .navbar-list {
+  display: flex;
   font-weight: 700;
   color: azure;
+  gap: 1rem;
+  align-items: center;
 }
+.navbar .navbar-list li a {
+  color: rgb(245, 243, 241);
+  text-decoration: none;
+}
+
+.navbar .navbar-list li {
+}
+.navbar {
+  gap: 5rem;
+}
+
 header img {
   height: 50px;
   width: auto;
@@ -65,10 +70,6 @@ li:hover {
 
 a:hover {
   color: black;
-}
-
-.logo {
-  cursor: pointer;
 }
 
 /* img:hover {
@@ -298,9 +299,50 @@ footer .footer {
   padding: 10px;
 }
 
-/*=======================================*/
+/*================Media Query=======================*/
 
-@media only screen and (max-width: 980px) {
+/*================Media Query=======================*/
+
+@media only screen and (max-width: 998px) {
+  .navbar {
+    gap: 10px;
+    background-color: #401502;
+  }
+
+  header {
+    opacity: 1;
+    background-color: #0a0101;
+  }
+
+  .navbar .navbar-list {
+    position: absolute;
+    top: 80px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    border: snow solid 2px;
+    border-top: 0;
+    flex-direction: column;
+    background-color: #0a0101;
+    border-radius: 0px 0px 15px 15px;
+    padding: 45px 30px;
+
+    display: none;
+  }
+
+  .navbar .menu-label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .navbar #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
   .seccionUno {
     display: flex;
     align-items: center;
@@ -390,7 +432,7 @@ footer .footer {
   }
 }
 
-/*============================================*/
+/*==================Media Query==========================*/
 
 @media (max-width: 580px) {
   .seccionUno {
